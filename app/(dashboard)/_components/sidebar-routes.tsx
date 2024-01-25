@@ -1,6 +1,6 @@
 "use client";
 
-import { BarChart, Compass, Layout, List } from "lucide-react";
+import { BarChart, Compass, Layout, List,Bot,MessageSquareDashedIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 import { SidebarItem } from "./sidebar-item";
@@ -16,6 +16,16 @@ const guestRoutes = [
     label: "Browse",
     href: "/search",
   },
+  {
+    icon: Bot,
+    label: "Support",
+    href: "/",
+  },
+  {
+    icon: MessageSquareDashedIcon,
+    label: "Notice",
+    href: "/",
+  },
 ];
 
 const teacherRoutes = [
@@ -28,6 +38,11 @@ const teacherRoutes = [
     icon: BarChart,
     label: "Analytics",
     href: "/teacher/analytics",
+  },
+  {
+    icon: MessageSquareDashedIcon,
+    label: "Notification",
+    href: "/",
   },
 ]
 
